@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+
+        body {background-color: lightskyblue;
+            
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 6px 10px;
+            margin: 6px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            margin-top: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+
+    <form action="/submit_registration" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="text" id="contact" name="contact" required><br>
+
+        <label for="university_id">University ID:</label><br>
+        <input type="text" id="university_id" name="university_id" required><br>
+
+        <label for="major">Major:</label><br>
+        <input type="text" id="major" name="major" required><br>
+
+        <label for="graduation_year">Graduation Year:</label><br>
+        <input type="number" id="graduation_year" name="graduation_year" min="2022" max="2026" required><br>
+
+        <input type="submit" value="Submit">
+        <marquee>Please make sure you fill all the spaces before submitting</marquee>
+    </form>
+</body>
+</html>
